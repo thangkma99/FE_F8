@@ -1,0 +1,264 @@
+/* 
+reset css
+*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+} 
+.row::after{
+
+}
+.row{
+    margin-left: -8px;
+    margin-right: -8px;
+}
+.col{
+    float: left;
+    padding-left:-8px;
+    padding-right:-8px;
+}
+.col-half{
+    width: 50%;
+}
+.col-full{
+    width: 100%;
+}
+html{
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+.clear{
+    clear: both;
+}
+#main {
+    width: 100%;
+
+}
+#header {
+    height: 46px;
+    background-color: #000;
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    z-index: 5;
+}
+#nav{
+    position: relative;
+    
+}
+#nav li {
+    display: inline-block;
+    position: relative;
+}
+#nav .subnav {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+
+}
+#nav .subnav li:hover{
+    display: inline-block;
+}
+#nav li a {
+    text-decoration: none;
+    line-height: 46px;
+    padding: 0 24px;
+    display: inline-block;
+    
+}
+#nav>li>a{
+    color: #fff;
+    position: relative;
+}
+#nav .subnav a {
+    color: #000;
+}
+#nav li:hover a {
+    color: #000;
+    background-color: #fff ;
+}
+#slider {
+    padding-top: 50%;
+    margin-top: 46px;
+    background:url('/assets/img/chicago.jpg') top center / cover no-repeat; 
+}
+#slider .text-content{
+    color: #fff;
+    position: absolute;
+    bottom: 48px;
+    left: 50%;
+    transform:translateX(-50%);
+    text-align: center;
+}
+#slider .text-content .text-heading{
+    font-weight: 500;
+    font-size: 24px;
+    margin-bottom: 25px;
+}
+#slider .text-content .text-descreption{
+    font-size: 15px;
+}
+#content {
+
+}
+#content .content-section{
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 64px 0;
+}
+#content .section-heading{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+#content .section-sub-heading{
+    text-align: center;
+    font-size: 15px;
+    margin-top: 25px;
+    font-style: italic;
+    opacity: 0.6;
+}
+#content .about-text{
+    margin-top: 25px;
+    text-align: justify;
+    line-height: 1.4;
+}
+#content .member-item{
+    float: left;
+    text-align: center;
+    width: 33.33333%;
+}
+#content .member-list{
+    margin-top: 48px;
+}
+#content .member-name{
+    font-size: 15px;
+    
+}
+#content .avatar{
+    width: 154px;
+    margin-top: 15px;
+    border-radius: 4px;
+}
+.tour-section{
+    background-color: #000;
+    color: #fff ;
+}
+.ticket-list{
+    color: #000;
+    background-color: #fff;
+    margin-top: 40px;
+}
+.ticket-list li{
+    font-size: 15px;
+    padding: 4px 16px;
+    border-bottom: solid #ddd 1px;
+    color: #757575;
+    list-style: none;
+}
+.ticket-list .sold-out{
+    color: #fff;
+    background-color: rgb(184, 28, 28);
+    padding: 3px 3px;
+    margin-left: 10px;
+}
+.ticket-list .the-rest{
+    float: right;
+    width: 24px;
+    height: 24px;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    line-height: 24px;
+    border-radius: 50%;
+    margin-top: -3px;
+}
+.place-list{
+    margin-top: 28px;
+    margin-left: -8px;
+    margin-right: -8px;
+
+}
+.place-item{
+    width: 33.33333%;
+    float: left;
+    padding: 0 8px;
+}
+.place-img{
+    width: 100%;
+    display: block;
+}
+.place-img:hover{
+    opacity: 0.6;
+}
+
+.place-body{
+    background-color: #fff;
+    color: #000;
+    font-size: 15px;
+}
+.place-heading{
+    font-size: 15px;
+    font-weight: 600;
+
+}
+.place-time{
+
+}
+.desc{
+
+}
+.place-buy-btn{
+    background-color: rgb(150, 42, 42);
+    color: #fff;
+    text-decoration: none;
+    padding: 11px 16px;
+    display: inline-block;
+    margin: 12px 15px;
+}
+.place-buy-btn:hover{
+    background-color: rgb(78, 200, 143);
+}
+.contact-content{
+    margin-top: 48px;
+}
+.contact-info{
+    font-size: 18px;
+    line-height: 1.5;
+}
+.contact-info i[class*="ti-"]{
+    width: 30px;
+    display: inline-block;
+}
+.form-control{
+    padding: 10px;
+    border: 1px solid #ccc !important;
+    width: 100%;
+}
+input{
+    cursor: pointer; 
+}
+.map-section img{
+    width: 100%;
+}
+
+#footer {
+    padding: 64px 16px;
+    text-align: center;
+    color: #757575;
+}
+.social{
+    font-size: 24px;
+}
+.social a {
+    text-decoration: none;
+    color: #757575;
+}
+#footer p>a{
+    color: #757575;
+}
