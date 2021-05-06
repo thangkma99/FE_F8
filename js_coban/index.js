@@ -131,34 +131,143 @@
 // console.log(flatArr);
 
 
-var topics = [ 
-    {
-        topic: `frontend`,
-        courses: [
-            {
-                id: 1,
-                title: `javascript`
-            },
-            {
-                id: 2,
-                title: `ReactJs`
-            }
-        ]
-    },
-    {
-        topic: `backend`,
-        courses: [
-            {
-                id: 1,
-                title: `php`
-            },
-            {
-                id: 2,
-                title: `NoteJs`
-            }
-        ]
-    },
-];
-var newCoure = topics.reduce(function(khoaHoc) {
+// var topics = [ 
+//     {
+//         topic: `frontend`,
+//         courses: [
+//             {
+//                 id: 1,
+//                 title: `javascript`
+//             },
+//             {
+//                 id: 2,
+//                 title: `ReactJs`
+//             }
+//         ]
+//     },
+//     {
+//         topic: `backend`,
+//         courses: [
+//             {
+//                 id: 1,
+//                 title: `php`
+//             },
+//             {
+//                 id: 2,
+//                 title: `NoteJs`
+//             }
+//         ]
+//     },
+// ];
+// var newCoure = topics.reduce(function(khoaHoc, list) {
+//     return khoaHoc.concat(list.courses);
+// }, [])
+// console.log(newCoure)
 
-}, [])
+
+// var title = `xin caho toi la Thang`;
+// console.log(title.includes('toi la', 3));
+
+// console.log(Math.PI);
+// var random = Math.floor(Math.random() * 5);
+// var bonus = [
+//     '10 coin',
+//     '101 coin',
+//     '30 coin',
+//     '103 coin',
+//     '106 coin'
+// ];
+// console.log(bonus[random]);
+
+// function myfunction(param) {
+//     if (typeof param === 'function') {param(`xin chao`)}  
+// }
+// function myCallback(value) {
+//     console.log(`value: `, value);
+// }
+// myfunction(myCallback);
+// Array.prototype.map2 = function() {
+//     console.log(course);
+// };
+// var course = [
+//     'Java',
+//     'PHP',
+//     'NoteJs'
+// ];
+// course.map2();
+// var htmls = course.map2(function(hienThi) {
+//     return `<h2>${hienThi}</h2> `;
+// });
+// console.log(htmls.join(''));
+
+// var course = [
+//     'Java',
+//     'PHP',
+//     'NoteJs'
+// ];
+// course.length = 10;
+// console.log(course);
+// for ( var i in course ) {
+//     console.log(course[i]);
+// }
+
+// var course = [
+//     'Java',
+//     'PHP',
+//     'NoteJs'
+// ];
+// course.forEach(function(text, number, array) {
+//     console.log(text, number, array);
+// })
+// Array.prototype.filter2 = function(callback) {
+//     for (var index in this) {
+//         if (this.hasOwnProperty(index)) {
+//             callback(this[index], index, this);
+//         }
+//     }
+// }
+// var course = [
+//     {
+//         name: 'JavaScript',
+//         coin: 320
+//     },
+//     {
+//         name: 'PHP',
+//         coin: 543
+//     },
+//     {
+//         name: 'NoteJs',
+//         coin: 0
+//     }
+// ];
+// var filterCourse = course.filter(function(khoaHoc, index, array) {
+//     console.log(khoaHoc, index, array);
+//     // return khoaHoc.coin > 400;
+// });
+
+// var course = [
+//     {
+//         name: 'JavaScript',
+//         coin: 320,
+//         isFinish: true
+//     },
+//     {
+//         name: 'PHP',
+//         coin: 543,
+//         isFinish: true
+//     },
+//     {
+//         name: 'NoteJs',
+//         coin: 3,
+//         isFinish: true
+//     }
+// ];
+//  var result = course.some(function(khoaHoc, index, array) { 
+//     return course.isFinish;
+//  });
+//  console.log(result);
+
+
+// document.write(`<h1>'Vu Minh Thang'</h1>`)
+var tieuDe = document.getElementById('heading');
+console.log({tieuDe});
