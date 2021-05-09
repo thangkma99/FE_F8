@@ -269,5 +269,157 @@
 
 
 // document.write(`<h1>'Vu Minh Thang'</h1>`)
-var tieuDe = document.getElementById('heading');
-console.log({tieuDe});
+// var tieuDe = document.querySelector('.heading');
+// console.log(tieuDe);
+// console.log(document.forms[`form-1`]);
+// let smile = document.querySelectorAll('ul');
+// console.log(smile.getElementsByT('li'));
+
+// var getElement = document.querySelector('h1');
+// console.log(getElement);
+// getElement.setAttribute('class', 'heading')
+
+// var headingElement = document.querySelector('h1');
+// console.log(headingElement.textContent );
+// console.log(headingElement.innerText = 'Hehe' );
+
+// var boxElement = document.querySelector('.box');
+// boxElement.innerHTML = '<i> hehe </i>'
+// console.log([boxElement]);
+// boxElement.style.width = '100px';
+// boxElement.style.height = '200px';
+// boxElement.style.backgroundColor = 'violet';
+// Object.assign(boxElement.style, {
+//     width : '100px',
+//     height : '100px',
+//     backgroundColor: 'violet'
+
+// var boxElement = document.querySelector('.box');
+// boxElement.classList.add('red');
+// boxElement.classList.remove('red');
+
+// var h1Element = document.querySelectorAll('h1');
+// h1Element.onclick = function() {
+//     console.log(Math.random());
+// }
+// for (var i = 0; i < h1Element.length; i++) {
+//     h1Element[i].onclick = function(e) {
+//         console.log(e.target);
+//     }
+// }
+
+
+// var inputElement =
+//  document.querySelector('input[type = "checkbox"]');
+// inputElement.onchange = function(e){
+//     console.log(e.target.checked);
+// }
+
+// var inputElement =
+//  document.querySelector('select');
+// inputElement.onchange = function(e){
+//     console.log(e.target.value);
+// }
+
+
+// var aElement = document.links;
+// for (var i = 0; i < aElement.length; i++) {
+//     aElement[i].onclick = function(e) {
+//         console.log(e.target.href);
+//     }
+// }
+
+// var btn = document.getElementById('btn');
+// function viec1(){
+//     console.log('viec 1')
+// };
+// btn.addEventListener('click', viec1)
+// setTimeout(function() {
+//     btn.removeEventListener('click', viec1)
+// },3000)
+// console.log(btn);
+// btn.onclick = function() {
+//     console.log('Viec 1');
+//     console.log('Viec 2');
+//     console.log('Viec 3');
+// }
+
+// var json = 'false';
+// var json2 = '["java", "array"]';
+// var json3 = '{"name":"Minh Thang", "age":18 }';
+// console.log(json3);
+// var a = '1';
+// console.log(JSON.parse(json3));
+// console.log(JSON.stringify(1));
+
+// setTimeout(function() {
+//     console.log(1);
+//     setTimeout(function() {
+//         console.log(2);
+//     }, 1000)
+// }, 1000)
+
+// var promise = new Promise(
+//     function(resolse, reject) {
+        // resolve(): thành công
+        // reject(): thất bại
+        // reject('that bai')
+//         resolse();
+//     }
+// );
+// promise
+//     .then(function() {
+//         console.log('Success 1')
+//     })
+//     .then(function() {
+//         console.log('success 2')
+//     })
+//     .catch(function(error) {
+//         console.log(error)
+//     })
+//     .finally(function() {
+//         console.log('done')
+//     })
+
+// function sleep(ms) {
+//     return new Promise(function(resolve) {
+//         setTimeout(resolve,ms);
+//     });
+// }
+
+// sleep(1000) 
+//     .then(function() {
+//         console.log(1);
+//         return sleep(1000);
+//     })
+//     .then(function() {
+//         console.log(2);
+//         return new Promise(function(resolve, reject) {
+//             reject('co loi xay ra');
+
+//         });
+//     })
+//     .then(function() {
+//         console.log(3);
+//         return sleep(1000);
+//     })
+//     .then(function() {
+//         console.log(4);
+//         return sleep(1000);
+//     })
+//     .catch(function(error) {
+//         console.log(error);
+//     })
+
+var promise = new Promise(function(resolve, reject) {
+    // resolve('success !');
+    reject('loi roi')
+})
+.then(function(result) {
+    console.log('result:', result);
+})
+.catch(function(error) {
+    console.log('ket qua: ', error);
+})
+
+
