@@ -411,15 +411,36 @@
 //         console.log(error);
 //     })
 
-var promise = new Promise(function(resolve, reject) {
-    // resolve('success !');
-    reject('loi roi')
-})
-.then(function(result) {
-    console.log('result:', result);
-})
-.catch(function(error) {
-    console.log('ket qua: ', error);
-})
+// var promise = new Promise(function(resolve, reject) {
+//     // resolve('success !');
+//     reject('loi roi')
+// })
+// .then(function(result) {
+//     console.log('result:', result);
+// })
+// .catch(function(error) {
+//     console.log('ket qua: ', error);
+// })
 
+// var postAPI = 'https://jsonplaceholder.typicode.com/posts';
+// fetch(postAPI) 
+//     .then(function(response) {
+//         return response.json();
+//     })
+//     .then(function(post) {
+//         console.log(post);
+//     })
+//     .catch(function(error) {
+//         console.log(`failse`);
+//     })
+
+
+var courseAPI = "http://localhost:3000/courses";
+fetch(courseAPI)
+    .then(function(response) {
+        return response.json();
+    })
+    .then(function(courses) {
+        console.log(courses);
+    })
 
