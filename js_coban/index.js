@@ -435,12 +435,102 @@
 //     })
 
 
-var courseAPI = "http://localhost:3000/courses";
-fetch(courseAPI)
-    .then(function(response) {
-        return response.json();
-    })
-    .then(function(courses) {
-        console.log(courses);
-    })
+// var courseAPI = "http://localhost:3000/courses";
+// fetch(courseAPI)
+//     .then(function(response) {
+//         return response.json();
+//     })
+//     .then(function(courses) {
+//         console.log(courses);
+//     });
 
+
+// var listCoursesBlock = document.querySelector('#list-courses');
+// var courseApi = 'http://localhost:3000/courses';
+
+// function start() {
+//     getCourses(renderCourses);
+//     handleCreateForm();
+// }
+// start()
+
+// function getCourses(callback) {
+//     fetch(courseApi)
+//         .then(function(response) {
+//             return response.json();
+//         })
+//         .then(callback)
+// }
+// function createCourse(data, callback) {
+//     var options = {
+//         method: 'POST',
+//         headers: {
+//             'Content-Type': 'application/json'
+//             // 'Content-Type': 'application/x-www-form-urlencoded',
+//           },
+//         body: JSON.stringify(data)
+//     }
+//     fetch(courseApi, options) 
+//         .then(function(response) {
+//             response.json();
+//         })
+//         .then(callback);
+// }
+// function handleDeleteCourse(id) {
+//     var options = {
+//         method: 'DELETE',
+//         headers: {
+//             'Content-Type': 'application/json'
+//             // 'Content-Type': 'application/x-www-form-urlencoded',
+//           },
+//     }
+//     fetch(courseApi + '/' + id, options) 
+//         .then(function(response) {
+//             response.json();
+//         })
+//         .then(function(){
+//             getCourses(renderCourses);
+//         });
+// }
+// function renderCourses(courses) {
+//     var listCoursesBlock = document.querySelector('#list-courses');
+//     var htmls = courses.map(function(course) {
+//         return `
+//             <li>
+//                 <h3>${course.name}</h3>
+//                 <p>${course.description}</p>
+//                 <button onclick="handleDeleteCourse(${course.id})">&times</button>
+//             </li>
+//         `
+//     })
+//     listCoursesBlock.innerHTML = htmls.join('');
+// }
+
+// function handleCreateForm() {
+//     var createBtn = document.querySelector('#create');
+//     createBtn.onclick = function() {
+//         var name = document.querySelector('input[name="name"]').value;
+//         var description = document.querySelector('input[name="description"]').value;
+//         var formData = {
+//             name: name,
+//             description: description
+//         }
+//         createCourse(formData, function() {
+//             getCourses(renderCourses);
+//         });
+//     }
+// }
+
+
+const logger = (log) => console.log(log);
+logger("message");
+const sum = (a,b) => {
+    return a + b;
+}
+console.log(sum(2,3));
+class courses {
+    constructor(name,price) {
+        this.name = name;
+        this.price = price;
+    }
+}
